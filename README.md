@@ -46,7 +46,7 @@ The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano
 
 All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
 
-```css
+```html
 <svg width="16px" height="16px" class="db">
   <use xlink:href="#SVG-ID"></use>
 </svg>
