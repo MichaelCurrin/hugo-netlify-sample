@@ -4,6 +4,7 @@ date: 2017-01-10T15:04:10.000Z
 description: Mauris sit amet massa vitae tortor condimentum lacinia quis vel
 image: /img/blog-chemex.jpg
 ---
+
 Lorem ipsum dolor sit amet, **consectetur** adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat. Convallis a cras semper auctor. Mi ipsum faucibus vitae aliquet nec.
 
 ## Luctus venenatis lectus magna
