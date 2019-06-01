@@ -1,6 +1,6 @@
 ---
 title: Mi ipsum faucibus vitae aliquet nec
-date: 2016-12-17T15:04:10.000Z
+date: 2016-12-17T15:05:00.000Z
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua.
