@@ -1,9 +1,9 @@
-# Hugo Netlify CMS Sample
-> Hugo template for Netlify CMS with Netlify Identity
+# Hugo Sample with CMS
+> Hugo template site for Netlify CMS, with Netlify Identity
 
 This is a skeleton/sample project for building a static site with Hugo. It contains both the repo's content and a CMS to make changes to content through a user-friendly frontend.
 
-I've had issues getting the CMS editor to work locally but it works great when deployed to the Netlify site.
+*I've had issues getting the CMS editor to work locally but it works great when deployed to the Netlify site.*
 
 ## Background
 
@@ -11,13 +11,13 @@ This is a small business template built with [Victor Hugo](https://github.com/ne
 
 I got a copy of the repo in my Github account when using the Deploy to Netlify button. I've since edited the repo to have sample content which is more generic. I plan use this is a starting point for new static sites and as simplified working reference for maintaining actual sites.
 
-## Remote setup
+## Run on Netlify
 
 ### Auto setup
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/michaelcurrin/hugo-netlify-sample&stack=cms)
 
-(The button points to a Netlify deploy URL with a repository sent as a parameter. This was previously https://github.com/netlify-templates/one-click-hugo-cms and that is how this repo was created before I changed it.)
+*(The button points to a Netlify deploy URL with a repository sent as a parameter. This was previously https://github.com/netlify-templates/one-click-hugo-cms and that is how this repo was created before I changed it.)*
 
 This will setup everything needed for running the CMS:
 
@@ -27,25 +27,28 @@ This will setup everything needed for running the CMS:
 * Manage content with Netlify CMS
 
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Then accept is from your e-mail inbox.
-
-Visit `/admin` on your site to login to the CMS editor.
-
-Now you're all set, and you can start editing content.
-
 ### Manual setup
 
 Alternatively, manually create an app on the Netlify site and choose a Hugo repo such as this one (or your own fork of it).
 
 The repo's [Netlify config file](netlify.toml) should provide appropriate details for the build & deploy section of your app.
 
+### Usage
 
-## Installation
+Check in the Netlify logs that your site deployed successfully then find the public URL.
 
-See the steps below for local installation.
+Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Then accept is from your e-mail inbox.
+
+Visit `/admin` on your site to login to the CMS editor.
+
+Now you're all set, and you can start editing content.
 
 
-### OS-level dependencies
+## Local development
+
+### Installation
+
+#### OS-level dependencies
 
 This project requires `node`. Note that version 12 and up cause issues with the gulp server, so based on a Stack Overflow answer, install and older version of node or use the node version manager.
 
@@ -62,13 +65,13 @@ $ nvm use 11.0.0
 ```
 
 
-### Clone this repository
+#### Clone this repository
 
 ```bash
 $ git clone https://github.com/michaelcurrin/hugo-netlify-sample
 ```
 
-### Install dependencies
+#### Install dependencies
 
 
 ```bash
@@ -81,7 +84,7 @@ OR
 $ yarn
 ```
 
-## Usage
+### Usage
 
 Start the development server locally.
 
