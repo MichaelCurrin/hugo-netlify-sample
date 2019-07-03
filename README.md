@@ -3,7 +3,17 @@
 
 This is a skeleton/sample project for building a static site with Hugo. It contains both the repo's content and a CMS to make changes to content through a user-friendly frontend.
 
-*I've had issues getting the CMS editor to work locally but it works great when deployed to the Netlify site.*
+## Preview
+
+In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on the Netlify or locally hosted app using the `/admin` path.
+
+When using the local admin view, the content content you are editing is in the local repo. But when changes are published is a commit is made on the remote repo without any local commit
+
+
+
+http://localhost:3000/admin/#/collections/post
+
+
 
 ## Background
 
@@ -46,6 +56,8 @@ Now you're all set, and you can start editing content.
 
 ## Local development
 
+This project uses a configured `package.json` to run Hugo. You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option.
+
 ### Installation
 
 #### OS-level dependencies
@@ -60,7 +72,15 @@ $ brew install nodejs
 $ brew install nvm
 ```
 
+Choose a version older than 12. Install it once off.
+
 ```bash
+$ nvm install 11.0.0
+```
+
+Activate it whenever you need to work with this repo.
+
+```
 $ nvm use 11.0.0
 ```
 
@@ -81,7 +101,7 @@ $ npm install
 OR
 
 ```bash
-$ yarn
+$ yarn install
 ```
 
 ### Usage
@@ -98,9 +118,9 @@ OR
 $ yarn start
 ```
 
-View the site at http://localhost:3000 .
+View the site at http://localhost:1313 (npm) or http://localhost:3000 (yarn) .
 
-Login to the admin view at http://localhost:3000/admin .
+Login to the admin view at `/admin`.
 
 
 ## Customization tips from the original repo
