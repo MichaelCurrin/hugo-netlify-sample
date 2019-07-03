@@ -26,7 +26,7 @@ I got a copy of the repo in my Github account when using the Deploy to Netlify b
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/michaelcurrin/hugo-netlify-sample&stack=cms)
 
-*(The button points to a Netlify deploy URL with a repository sent as a parameter. This was previously https://github.com/netlify-templates/one-click-hugo-cms and that is how this repo was created before I changed it.)*
+That button points to a Netlify deploy URL with the URL for this repository added as a parameter. The button previously pointed to https://github.com/netlify-templates/one-click-hugo-cms and that is how the base for this project was created.
 
 This will setup everything needed for running the CMS:
 
