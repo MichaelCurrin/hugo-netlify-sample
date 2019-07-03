@@ -48,9 +48,9 @@ Check in the Netlify logs that your site deployed successfully then find the pub
 
 Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Then accept is from your e-mail inbox.
 
-Visit `/admin` on your site to login to the CMS editor.
+Visit `/admin` on your site to login to the CMS editor. This use Netlify's Identity CMS, to give users the ability to set passwords, login and edit content. Manage your users through your site's settings on Netlify.
 
-Now you're all set, and you can start editing content.
+Now you're all set and you can start editing content.
 
 
 ## Local development
@@ -139,7 +139,7 @@ $ yarn start
 
 View the site at http://localhost:1313 (npm) or http://localhost:3000 (yarn) .
 
-Login to the admin view at `/admin`.
+Login to the admin view at `/admin`. Note that although you followed the path for the local server, the site you view and any changes you make are actually on the remote repo. i.e. If you add a post, you create a commit in the remote Github repo which triggers a Netlify rebuild - no file changes or commits are made in the local repo.
 
 
 ## Customization tips
