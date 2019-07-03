@@ -10,8 +10,7 @@ In order to use the local CMS editor, you need to have a user account for the ap
 When using the local admin view, the content content you are editing is in the local repo. But when changes are published is a commit is made on the remote repo without any local commit
 
 
-
-http://localhost:3000/admin/#/collections/post
+`/admin/#/collections/post`
 
 
 
@@ -56,7 +55,9 @@ Now you're all set, and you can start editing content.
 
 ## Local development
 
-This project uses a configured `package.json` to run Hugo. You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option.
+This project uses a configured `package.json` to run Hugo.
+
+You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option and so is preferred for this project. To avoid conflicts and a warning message, a `yarn.lock` file is versioned but not `packackage-lock.json`.
 
 ### Installation
 
