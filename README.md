@@ -59,6 +59,7 @@ This project uses a configured `package.json` to run Hugo.
 
 You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option and so is preferred for this project. To avoid conflicts and a warning message, a `yarn.lock` file is versioned but not `packackage-lock.json`.
 
+
 ### Installation
 
 #### OS-level dependencies
@@ -70,7 +71,7 @@ $ brew install nodejs
 ```
 
 ```bash
-$ brew install nvm
+$ brew install nvm yarn
 ```
 
 Choose a version older than 12. Install it once off.
