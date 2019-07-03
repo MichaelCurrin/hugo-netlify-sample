@@ -125,7 +125,15 @@ View the site at http://localhost:1313 (npm) or http://localhost:3000 (yarn) .
 Login to the admin view at `/admin`.
 
 
-## Customization tips from the original repo
+## Customization tips
+
+### Config
+
+The projects config is [/site/config.toml](/site/config.toml).
+
+### Admin
+
+See the files in [admin](/site/static/admin/) directory. The config file determines what pages can be edited and what fields they have. The index file is the admin login page.
 
 ### Layouts
 
@@ -137,12 +145,18 @@ Use Hugo’s `dict` functionality to feed content into partials and avoid repeat
 
 The template uses a custom fork of *Tachyons* and *PostCSS* with *cssnext* and *cssnano*. To customize the template for your brand, refer to [_variables.css](/src/css/imports/_variables.css) where most of the important global variables like colors and spacing are stored.
 
-### SVG
+
+### Images
+
+The [img](/site/static/img/) directory is where `.jpeg`, `.png`, `.ico` and `.svg` files are stored.
+
+
+#### SVG
 
 All SVG icons stored in [icons](/site/static/img/icons) are automatically optimized with *SVGO* (*gulp-svgmin*) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
 
 ```html
 <svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
+    <use xlink:href="#SVG-ID"></use>
 </svg>
 ```
