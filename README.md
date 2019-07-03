@@ -40,7 +40,7 @@ This will setup everything needed for running the CMS:
 
 Alternatively, manually create an app on the Netlify site and choose a Hugo repo such as this one (or your own fork of it).
 
-The repo's [Netlify config file](netlify.toml) should provide appropriate details for the build & deploy section of your app.
+The repo's [Netlify config file](/netlify.toml) should provide appropriate details for the build & deploy section of your app.
 
 ### Usage
 
