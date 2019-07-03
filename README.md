@@ -62,7 +62,8 @@ You can install and run the Hugo server with either `npm` or `yarn`, as covered 
 
 ### Installation
 
-#### OS-level dependencies
+
+#### Install OS-level dependencies
 
 This project requires `node`. Note that version 12 and up cause issues with the gulp server, so based on a Stack Overflow answer, install and older version of node or use the node version manager.
 
@@ -86,15 +87,31 @@ Activate it whenever you need to work with this repo.
 $ nvm use 11.0.0
 ```
 
-
 #### Clone this repository
 
 ```bash
 $ git clone https://github.com/michaelcurrin/hugo-netlify-sample
 ```
 
-#### Install dependencies
+#### Install project dependencies
 
+
+##### Hugo
+
+The project comes with Hugo binaries in the [bin](/bin/) directory. These need to be run in the context of a config file.
+
+```bash
+$ cd hugo-netlify-sample
+$ site
+$ ../bin/hugo.darwin version
+Hugo Static Site Generator v0.46 darwin/amd64 BuildDate: 2018-08-01T09:00:55Z
+```
+
+These binaries came with the base repo and the project was already configured to use it. If the binaries are missing, you will get an error.
+
+Alternatively, install Hugo. However, these docs do not support running a user installed version of hugo.
+
+##### Node packages
 
 ```bash
 $ npm install
