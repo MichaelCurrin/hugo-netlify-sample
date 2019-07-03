@@ -125,7 +125,7 @@ $ yarn install
 
 ### Usage
 
-Start the development server locally.
+Start the development server locally use `npm` or `yarn`. One of these will run the steps needed to process and serve assets for the public and admin views. This includes running `gulp`. Do not attempt to run the Hugo command directly as it will build to a different directory and you will miss some functionality.
 
 ```bash
 $ npm start
