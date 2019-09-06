@@ -5,13 +5,11 @@ This is a skeleton/sample project for building a static site with Hugo. It conta
 
 ## Preview
 
-In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on the Netlify or locally hosted app using the `/admin` path.
+In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on Netlify or locally hosted app using the `/admin` path.
 
-When using the local admin view, the content content you are editing is in the local repo. But when changes are published is a commit is made on the remote repo without any local commit
-
+When using the _local_ admin view, the content you are editing is in the local repo. But when changes are _published_, a commit is made on the remote repo, without any local commit.
 
 `/admin/#/collections/post`
-
 
 
 ## Background
@@ -30,10 +28,10 @@ That button points to a Netlify deploy URL with the URL for this repository adde
 
 This will setup everything needed for running the CMS:
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
+- A new repository in your GitHub account with the code
+- Full Continuous Deployment to Netlify's global CDN network
+- Control users and access with Netlify Identity
+- Manage content with Netlify CMS
 
 
 ### Manual setup
@@ -55,9 +53,9 @@ Now you're all set and you can start editing content.
 
 ## Local development
 
-This project uses a configured `package.json` to run Hugo.
+Follow this section to install and run this Hugo CMS template site. For further tips, see the _Hugo_ section this [static site resources](https://github.com/MichaelCurrin/static-sites-generator-resources) repo.
 
-You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option and so is preferred for this project. To avoid conflicts and a warning message, a `yarn.lock` file is versioned but not `packackage-lock.json`.
+This project uses a configured `package.json` to run Hugo. You can install and run the Hugo server with either `npm` or `yarn`, as covered below. `yarn` is not as widely used but arguably a better option and so is preferred for this project. To avoid conflicts and a warning message, a `yarn.lock` file is versioned but not `packackage-lock.json`.
 
 
 ### Installation
@@ -83,7 +81,7 @@ $ nvm install 11.0.0
 
 Activate it whenever you need to work with this repo.
 
-```
+```bash
 $ nvm use 11.0.0
 ```
 
@@ -102,7 +100,7 @@ The project comes with Hugo binaries in the [bin](/bin/) directory. These need t
 
 ```bash
 $ cd hugo-netlify-sample
-$ site
+$ cd site
 $ ../bin/hugo.darwin version
 Hugo Static Site Generator v0.46 darwin/amd64 BuildDate: 2018-08-01T09:00:55Z
 ```
