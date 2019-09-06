@@ -139,6 +139,8 @@ According to Netlify docs:
 
 > Note: no matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it will always fetch and commit files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file.
 
+If you need to local development (pictures, styling, posts, etc.) you can easily do it locally and view the site on the local URL. You just won't be able to use the admin view with your local contnet.
+
 
 ## Customization tips
 
