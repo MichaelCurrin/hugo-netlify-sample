@@ -3,6 +3,8 @@
 
 This is a skeleton/sample project for building a static site with Hugo. It contains both the repo's content and a CMS to make changes to content through a user-friendly frontend.
 
+This needs to be maintained if you use it for a long time. It does not work above `Node 11` and many node dependencies give deprecation warnings. Mostly related to `gulp` and `postcss-cssnext`. The [one-click repo](https://github.com/netlify-templates/one-click-hugo-cms) this repo originates from in turn is based on (and sometimes rebased on) the [Victor Hugo](https://github.com/netlify-templates/victor-hugo) repo.
+
 ## Preview
 
 In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on Netlify or locally hosted app using the `/admin` path.
