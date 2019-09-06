@@ -5,6 +5,7 @@ This is a skeleton/sample project for building a static site with Hugo. It conta
 
 This needs to be maintained if you use it for a long time. It does not work above `Node 11` and many node dependencies give deprecation warnings. Mostly related to `gulp` and `postcss-cssnext`. The [one-click repo](https://github.com/netlify-templates/one-click-hugo-cms) this repo originates from in turn is based on (and sometimes rebased on) the [Victor Hugo](https://github.com/netlify-templates/victor-hugo) repo.
 
+
 ## Preview
 
 In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on Netlify or locally hosted app using the `/admin` path.
@@ -144,9 +145,10 @@ Login to the admin view at `/admin`. Note that although you followed the path fo
 
 ## Customization tips
 
-### Config
+### Configs
 
-The projects config is [/site/config.toml](/site/config.toml).
+- Site [config.toml](/site/config.toml)
+- Admin [config.yml](/site/static/admin/config.yml)
 
 ### Admin
 
@@ -162,11 +164,9 @@ Use Hugo’s `dict` functionality to feed content into partials and avoid repeat
 
 The template uses a custom fork of *Tachyons* and *PostCSS* with *cssnext* and *cssnano*. To customize the template for your brand, refer to [_variables.css](/src/css/imports/_variables.css) where most of the important global variables like colors and spacing are stored.
 
-
 ### Images
 
 The [img](/site/static/img/) directory is where `.jpeg`, `.png`, `.ico` and `.svg` files are stored.
-
 
 #### SVG
 
