@@ -6,15 +6,6 @@ This is a skeleton/sample project for building a static site with Hugo. It conta
 This needs to be maintained if you use it for a long time. It does not work above `Node 11` and many node dependencies give deprecation warnings. Mostly related to `gulp` and `postcss-cssnext`. The [one-click repo](https://github.com/netlify-templates/one-click-hugo-cms) this repo originates from in turn is based on (and sometimes rebased on) the [Victor Hugo](https://github.com/netlify-templates/victor-hugo) repo.
 
 
-## Preview
-
-In order to use the local CMS editor, you need to have a user account for the app setup on Netlify Identify. You can then edit the content on Netlify or locally hosted app using the `/admin` path.
-
-When using the _local_ admin view, the content you are editing is in the local repo. But when changes are _published_, a commit is made on the remote repo, without any local commit.
-
-`/admin/#/collections/post`
-
-
 ## Background
 
 This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
@@ -138,9 +129,15 @@ OR
 $ yarn start
 ```
 
-View the site at http://localhost:1313 (npm) or http://localhost:3000 (yarn) .
+View the site at http://localhost:1313 (npm) or http://localhost:3000 (yarn).
 
-Login to the admin view at `/admin`. Note that although you followed the path for the local server, the site you view and any changes you make are actually on the remote repo. i.e. If you add a post, you create a commit in the remote Github repo which triggers a Netlify rebuild - no file changes or commits are made in the local repo.
+Login to the admin view at `/admin`. This is a view on the single-page-app on the admin `index.html` page which has been set in the admin config to work with the remote server.
+
+The local admin site that you view and any changes you make are actually on the _remote_ repo. i.e. If you add a post, you create a commit in the remote Github repo which triggers a Netlify rebuild - no file changes or commits are made in the local repo. You have to a pull locally to get the remote changes.
+
+According to Netlify docs:
+
+> Note: no matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it will always fetch and commit files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file.
 
 
 ## Customization tips
@@ -149,6 +146,8 @@ Login to the admin view at `/admin`. Note that although you followed the path fo
 
 - Site [config.toml](/site/config.toml)
 - Admin [config.yml](/site/static/admin/config.yml)
+
+Read more config [here](https://www.netlifycms.org/docs/configuration-options/) on the Netlify docs.
 
 ### Admin
 
