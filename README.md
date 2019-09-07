@@ -117,7 +117,25 @@ $ yarn install
 
 ### Usage
 
-Start the development server locally use `npm` or `yarn`. One of these will run the steps needed to process and serve assets for the public and admin views. This includes running `gulp`. Do not attempt to run the Hugo command directly as it will build to a different directory and you will miss some functionality.
+#### Commands list
+
+See a list of commands available.
+
+```bash
+$ npm run
+```
+
+A run with:
+
+```bash
+$ npm run COMMAND
+```
+
+#### Build and serve
+
+Start the development server locally.
+
+Use `npm` or `yarn` as shown below. Either of these will run the steps needed to process and serve assets for the public and admin views. You'll see from the output that `gulp` is run as part of the command. Note: Do not attempt to run the `hugo` command directly as it will build to a different directory and you will miss some functionality.
 
 ```bash
 $ npm start
@@ -140,6 +158,13 @@ According to Netlify docs:
 > Note: no matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it will always fetch and commit files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file.
 
 If you need to local development (pictures, styling, posts, etc.) you can easily do it locally and view the site on the local URL. You just won't be able to use the admin view with your local contnet.
+
+#### Build
+
+```bash
+$ npm run hugo
+```
+
 
 
 ## Customization tips
