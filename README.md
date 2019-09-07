@@ -178,3 +178,9 @@ All SVG icons stored in [icons](/site/static/img/icons) are automatically optimi
     <use xlink:href="#SVG-ID"></use>
 </svg>
 ```
+
+
+## License
+
+- `hugo-netlify-sample`: [LICENSE](/LICENSE)
+- `one-click-hugo-cms` [LICENSE-source](/LICENSE-source) - from the original [https://github.com/netlify-templates/one-click-hugo-cms/]
