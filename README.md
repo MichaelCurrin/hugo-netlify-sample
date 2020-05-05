@@ -3,7 +3,13 @@
 
 This is a skeleton/sample project for building a static site with Hugo. It contains both the repo's content and a CMS to make changes to content through a user-friendly frontend.
 
-This needs to be maintained if you use it for a long time. It does not work above `Node 11` and many node dependencies give deprecation warnings. Mostly related to `gulp` and `postcss-cssnext`. The [one-click repo](https://github.com/netlify-templates/one-click-hugo-cms) this repo originates from in turn is based on (and sometimes rebased on) the [Victor Hugo](https://github.com/netlify-templates/victor-hugo) repo.
+
+## Notes
+
+- There are a ton of dependencies here and I don't know what they do. Starting a new project based on pieces of this would be good. Some useful pieces to note 
+    - The Netlify CMS library is used for handling previews.
+    - See the Netlify CMS config.
+- This needs to be maintained if you use it for a long time. It does not work above `Node 11` and many node dependencies give deprecation warnings. Mostly related to `gulp` and `postcss-cssnext`. The [one-click repo](https://github.com/netlify-templates/one-click-hugo-cms) this repo originates from in turn is based on (and sometimes rebased on) the [Victor Hugo](https://github.com/netlify-templates/victor-hugo) repo.
 
 
 ## Background
