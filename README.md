@@ -1,7 +1,7 @@
 # Hugo Sample with CMS
 > Skeleton Hugo static site based on the Netlify CMS quickstart sample
 
-This is a skeleton/sample project for building a static site with Hugo. It contains both the repo's content and a CMS to make changes to content through a user-friendly frontend.
+This is a skeleton/sample project for building a static site with [Hugo](https://gohugo.io). It contains both the repo's content and a CMS built on Netlify to make changes to content through a user-friendly frontend.
 
 
 ## Notes
